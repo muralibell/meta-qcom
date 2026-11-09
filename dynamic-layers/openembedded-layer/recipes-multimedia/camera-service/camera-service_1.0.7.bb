@@ -33,6 +33,10 @@ PACKAGE_BEFORE_PN = " \
     ${PN}-server-lib-kodiak \
 "
 
+FILES:${PN} += "\
+    ${nonarch_libdir}/sysusers.d/qticamserver.conf \
+"
+
 # Common libraries used by server and client
 FILES:${PN}-common = " \
     ${libdir}/libqmmf_camera_metadata.so.* \
